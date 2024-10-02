@@ -1,0 +1,75 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu superior */
+.menu-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-superior a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-superior a:hover {
+    text-decoration: underline;
+}
+
+/* Menu lateral */
+.menu-lateral {
+    position: fixed;
+    top: 60px; /* para ajustar ao menu superior */
+    left: 0;
+    width: 150px;
+    height: calc(100% - 120px); /* ajuste para não sobrepor o rodapé */
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral li {
+    margin: 15px 0;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Área de conteúdo */
+.conteudo {
+    margin-left: 160px; /* espaço para o menu lateral */
+    padding: 80px 20px 20px 20px; /* ajuste para o menu superior e espaçamento */
+    min-height: calc(100vh - 160px); /* ajuste para a altura da página */
+    background-color: #f4f4f4;
+}
+
+/* Rodapé */
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
